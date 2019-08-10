@@ -10,7 +10,7 @@
 <div class="row">
     <div class="col-6">
         <p class="text-selecionados mb-0">Selecionados</p>
-        <p class="text-selecionados">{{quantidadeSelecionada}} de 8 filmes</p>
+        <p class="text-selecionados">{{quantidadeFilmesSelecionados}} de 8 filmes</p>
     </div>
     <div class="col-6">
         <button class="btn btn-secondary float-right">Gerar meu Campeonato</button>
@@ -19,6 +19,7 @@
 
 <div class="row">
     <div class="col-3 mb-3" *ngFor="let filme of filmes">
-        <cf-card [titulo]="filme.titulo" [texto]="filme.ano" [idCheckBox]="filme.id"></cf-card>
+        <cf-card #cardsCheckBox [disabled]="false" [titulo]="filme.titulo" [texto]="filme.ano" [idCheckBox]="filme.id"
+            (onChangeCheckBox)="verificarQuantidadeFilmesSelecionados($event)"></cf-card>
     </div>
 </div>
