@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Filme } from '../models/filme';
+import { FilmeServices } from '../services/filme.service';
+
 @Component({
   selector: 'cf-inicio-jogo',
   templateUrl: './inicio-jogo.component.html',
@@ -7,11 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioJogoComponent implements OnInit {
 
+  filmes: Filme[] = [];
   quantidadeSelecionada: number = 5;
 
-  constructor() { }
+  constructor(private filmeService: FilmeServices) { }
 
   ngOnInit() {
+    this.filmeService.obterFilmes().subscribe(filmes => {
+      this.filmes = filmes;
+      console.log(this.filmes);
+    })
   }
-
 }
