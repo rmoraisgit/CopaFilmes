@@ -14,6 +14,7 @@ export class InicioJogoComponent implements OnInit {
   quantidadeFilmesSelecionados: number = 0;
 
   idFilmesSelecionados: string[] = [];
+  filmesSelecionados: Filme[] = [];
 
   teste: any;
 
@@ -32,22 +33,27 @@ export class InicioJogoComponent implements OnInit {
 
     if (event.checked) {
       this.quantidadeFilmesSelecionados++;
-      this.idFilmesSelecionados.push(event.id);
+      // this.idFilmesSelecionados.push(event.id);
+      this.filmesSelecionados.push(this.filmes.find(f => f.id == event.id));
 
-      const index = this.idFilmesSelecionados.indexOf(event.id, 0);
-      console.log(index)
-      console.log(this.idFilmesSelecionados);
+      console.log(this.filmesSelecionados)
+
+      // const index = this.idFilmesSelecionados.indexOf(event.id, 0);
+      // console.log(index)
+      // console.log(this.idFilmesSelecionados);
     }
 
     else {
       this.quantidadeFilmesSelecionados--;
 
-      const index = this.idFilmesSelecionados.indexOf(event.id, 0);
-      console.log(index);
-      console.log(this.idFilmesSelecionados[index])
+      // const index = this.idFilmesSelecionados.indexOf(event.id, 0);
+      // console.log(index);
+      // console.log(this.idFilmesSelecionados[index])
 
-      this.idFilmesSelecionados.concat(this.idFilmesSelecionados.splice(index, 1));
-      console.log(this.idFilmesSelecionados);
+      this.filmesSelecionados = this.filmesSelecionados.filter(f => f.id != event.id);
+
+      // this.idFilmesSelecionados.concat(this.idFilmesSelecionados.splice(index, 1));
+      console.log(this.filmesSelecionados);
     }
 
     if (this.quantidadeSelecionadaCorretamente()) {
@@ -80,7 +86,12 @@ export class InicioJogoComponent implements OnInit {
 
       // console.log(card.idCheckBox.toString());
 
-      if (!this.idFilmesSelecionados.includes(card.idCheckBox, 0)) {
+      // if (!this.idFilmesSelecionados.includes(card.idCheckBox, 0)) {
+      //   card.disabled = true;
+      //   console.log('CAIU E DEVE BLOQUEARR')
+      // }
+
+      if (!this.filmesSelecionados.some(f => f.id == card.idCheckBox)) {
         card.disabled = true;
         console.log('CAIU E DEVE BLOQUEARR')
       }
@@ -111,5 +122,17 @@ export class InicioJogoComponent implements OnInit {
       console.log('FALSE');
       return false;
     }
+  }
+
+  iniciarCampeonato() {
+
+    return this.filmeService.IniciarCampeonato(this.obterFilmesSelecionados())
+      .subscribe(resp=> {
+        console.log(resp);
+      });
+  }
+
+  private obterFilmesSelecionados() {
+    return this.filmesSelecionados;
   }
 }

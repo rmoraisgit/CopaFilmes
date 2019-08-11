@@ -12,4 +12,8 @@ export class FilmeServices extends BaseService {
     obterFilmes(){
         return this.http.get<Filme[]>(this.UrlServiceCopaFilmes, this.ObterHeaderJson());
     }
+
+    IniciarCampeonato(filmes: Filme[]){
+        return this.http.post(this.UrlServiceAPI + 'copafilmes/inicio-jogo', filmes, this.ObterHeaderJson())
+    }   
 }
