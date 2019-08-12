@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
-using CopaFilmes.Infra.CrossCutting.IoC;
+using CopaFilmes.Domain.Interfaces;
+using CopaFilmes.Domain.Notificacoes;
+using CopaFilmes.Domain.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -11,11 +13,15 @@ namespace CopaFilmes.Services.Api.Configurations
 {
     public static class DependencyInjectionConfiguration
     {
-        public static void AddDIConfiguration(this IServiceCollection services)
+        public static IServiceCollection ResolveDependencies(this IServiceCollection services)
         {
-            services.AddAutoMapper();
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            NativeInjectorBootStrapper.RegisterServices(services);
+            // Notificador
+            services.AddScoped<INotificador, Notificador>();
+
+            // Services - Domain
+            services.AddScoped<ICopaFilmesService, CopaFilmesService>();
+
+            return services;
         }
     }
 }

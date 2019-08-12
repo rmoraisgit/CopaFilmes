@@ -9,8 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="8.1.0" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
@@ -19,7 +18,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CopaFilmes.Domain\CopaFilmes.Domain.csproj" />
-    <ProjectReference Include="..\CopaFilmes.Infra.CrossCutting.IoC\CopaFilmes.Infra.CrossCutting.IoC.csproj" />
   </ItemGroup>
 
 </Project>

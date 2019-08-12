@@ -8,12 +8,10 @@ C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Services.Api.runtimeconfig.json
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Services.Api.runtimeconfig.dev.json
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Services.Api.dll
+C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Services.Api.pdb
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Domain.dll
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Domain.pdb
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.RazorTargetAssemblyInfo.cache
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.csproj.CopyComplete
-C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Services.Api.pdb
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.dll
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.pdb
-C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Infra.CrossCutting.IoC.dll
-C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Infra.CrossCutting.IoC.pdb

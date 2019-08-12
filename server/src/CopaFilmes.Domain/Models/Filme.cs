@@ -9,6 +9,7 @@ namespace CopaFilmes.Domain.Models
         public string Id { get; private set; }
         public string Titulo { get; private set; }
         public int Ano { get; private set; }
-        public int Nota { get; private set; }
+        public decimal Nota { get; private set; }
+        public int Colocacao { get; private set; }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using CopaFilmes.Domain.Interfaces;
 using CopaFilmes.Domain.Models;
 using CopaFilmes.Domain.Notificacoes;
 using CopaFilmes.Services.Api.ViewModels;
@@ -16,11 +17,14 @@ namespace CopaFilmes.Services.Api.Controllers
     public class CopaFilmesController : BaseController
     {
         private readonly IMapper _mapper;
+        private readonly ICopaFilmesService _copaFilmesService;
 
         public CopaFilmesController(IMapper mapper,
-                                    INotificador notificador) : base(notificador)
+                                    INotificador notificador,
+                                    ICopaFilmesService copaFilmesService) : base(notificador)
         {
             _mapper = mapper;
+            _copaFilmesService = copaFilmesService;
         }
 
         // GET api/values
@@ -31,14 +35,13 @@ namespace CopaFilmes.Services.Api.Controllers
         }
 
         [HttpPost("inicio-jogo")]
-        public async Task<ActionResult<FilmeViewModel>> IniciarCampeonato([FromBody] List<FilmeViewModel> filmesViewModel)
+        public ActionResult<ResultadoCampeonatoViewModel> IniciarCampeonato([FromBody] ICollection<FilmeViewModel> filmesViewModel)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
 
-            var filme = _mapper.Map<ICollection<Filme>>(filmesViewModel);
+            var filmes = _mapper.Map<ICollection<Filme>>(filmesViewModel);
 
-
-            // await _compraService.Registrar(compra);
+            _copaFilmesService.RealizarCampeonato(filmes);
 
             return CustomResponse(filmesViewModel);
         }

@@ -13,6 +13,7 @@ namespace CopaFilmes.Services.Api.Configurations
         public AutoMapperConfig()
         {
             CreateMap<Filme, FilmeViewModel>().ReverseMap();
+            CreateMap<ResultadoCampeonatoViewModel, ResultadoCampeonatoViewModel>().ReverseMap();
         }
     }
 }

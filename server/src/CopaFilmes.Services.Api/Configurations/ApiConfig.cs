@@ -32,7 +32,6 @@ namespace CopaFilmes.Services.Api.Configurations
             return services;
         }
 
-
         public static IApplicationBuilder UseMvcConfiguration(this IApplicationBuilder app)
         {
             app.UseHttpsRedirection();
