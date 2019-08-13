@@ -35,11 +35,11 @@ namespace CopaFilmes.Services.Api.Controllers
         }
 
         [HttpPost("inicio-jogo")]
-        public ActionResult<ResultadoCampeonatoViewModel> IniciarCampeonato([FromBody] ICollection<FilmeViewModel> filmesViewModel)
+        public ActionResult<ResultadoCampeonatoViewModel> IniciarCampeonato([FromBody] IList<FilmeViewModel> filmesViewModel)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
 
-            var filmes = _mapper.Map<ICollection<Filme>>(filmesViewModel);
+            var filmes = _mapper.Map<IList<Filme>>(filmesViewModel);
 
             _copaFilmesService.RealizarCampeonato(filmes);
 
