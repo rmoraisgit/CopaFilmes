@@ -14,18 +14,15 @@ namespace CopaFilmes.Domain.Services
     {
         public CopaFilmesService(INotificador notificador) : base(notificador) { }
 
-        public void RealizarCampeonato(IList<Filme> filmes)
+        public Rodada RealizarCampeonato(IList<Filme> filmes)
         {
-            if (filmes.Count != 8)
-            {
-                Notificar("Somente 8 filmes devem ser selecionados.");
-                return;
-            }
-
             filmes = OrdernaLista.PorOrdemAlfabetica(filmes);
 
             var resultadoPrimeiraRodada = RodadaFactory(1).ObterResultado(filmes);
             var resultadoSegundaRodada = RodadaFactory(2).ObterResultado(resultadoPrimeiraRodada.Filmes);
+            var resultadoFinal = RodadaFactory(3).ObterResultado(resultadoSegundaRodada.Filmes);
+
+            return resultadoFinal;
         }
 
         private ResultadoRodada RodadaFactory(int numeroRodada)
@@ -39,8 +36,7 @@ namespace CopaFilmes.Domain.Services
                 case 3:
                     return new ResultadoUltimaRodada();
                 default:
-                    var errorMsg = "Número da rodada inválida";
-                    Notificar(errorMsg);
+                    Notificar("Número da rodada inválida");
                     return null;
             }
         }

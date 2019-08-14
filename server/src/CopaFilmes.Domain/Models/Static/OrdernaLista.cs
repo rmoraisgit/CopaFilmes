@@ -7,9 +7,14 @@ namespace CopaFilmes.Domain.Models.Static
 {
     public static class OrdernaLista
     {
-        public static IList<Filme> PorOrdemAlfabetica(IList<Filme> lista)
+        public static IList<Filme> PorOrdemAlfabetica(IList<Filme> filme)
         {
-            return lista.OrderBy(l => l.Titulo).ToList();
+            return filme.OrderBy(f => f.Titulo).ToList();
+        }
+
+        public static IList<Filme> PorMaiorNota(IList<Filme> filme)
+        {
+            return filme.OrderByDescending(f => f.Nota).ToList();
         }
     }
 }

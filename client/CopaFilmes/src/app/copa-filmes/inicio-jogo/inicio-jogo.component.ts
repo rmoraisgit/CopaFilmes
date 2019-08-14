@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChildren, QueryList } from '@angular/core';
 
 import { Filme } from '../models/filme';
 import { FilmeServices } from '../services/filme.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'cf-inicio-jogo',
@@ -16,7 +17,8 @@ export class InicioJogoComponent implements OnInit {
 
   @ViewChildren('cardsCheckBox') cardsCheckBox: QueryList<any>;
 
-  constructor(private filmeService: FilmeServices) { }
+  constructor(private router: Router,
+    private filmeService: FilmeServices) { }
 
   ngOnInit() {
     this.filmeService.obterFilmes().subscribe(filmes => {
@@ -78,27 +80,25 @@ export class InicioJogoComponent implements OnInit {
 
   private checkBoxEstaBloqueado(): boolean {
 
-    console.log(this.cardsCheckBox)
-
     if (this.cardsCheckBox.some(c => c.disabled == true)) {
-      console.log('TRUE');
       return true;
     }
 
     else {
-      console.log('FALSE');
       return false;
     }
   }
 
   iniciarCampeonato() {
 
-    console.log(this.obterFilmesSelecionados());
+    localStorage.removeItem('resultado-campeonato');
 
     return this.filmeService.IniciarCampeonato(this.obterFilmesSelecionados())
-      .subscribe(resp => {
-        console.log(resp);
-      });
+      .subscribe(
+        data => {
+          localStorage.setItem('resultado-campeonato', JSON.stringify(data));
+          this.router.navigate(['/resultado']);
+        });
   }
 
   private obterFilmesSelecionados() {

@@ -10,12 +10,12 @@ namespace CopaFilmes.Domain.Models.Abstract
     {
         public ResultadoRodada()
         {
-            ResultadoCampeonato = new ResultadoCampeonato();
+            Rodada = new Rodada();
         }
 
-        public ResultadoCampeonato ResultadoCampeonato { get; set; }
+        public Rodada Rodada { get; set; }
 
-        public abstract ResultadoCampeonato ObterResultado(IList<Filme> filmes);
+        public abstract Rodada ObterResultado(IList<Filme> filmes);
 
         protected bool HouveEmpate(Filme f1, Filme f2)
         {

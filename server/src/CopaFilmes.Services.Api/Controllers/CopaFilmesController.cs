@@ -17,6 +17,7 @@ namespace CopaFilmes.Services.Api.Controllers
     public class CopaFilmesController : BaseController
     {
         private readonly IMapper _mapper;
+        private readonly INotificador _notificador;
         private readonly ICopaFilmesService _copaFilmesService;
 
         public CopaFilmesController(IMapper mapper,
@@ -38,12 +39,19 @@ namespace CopaFilmes.Services.Api.Controllers
         public ActionResult<ResultadoCampeonatoViewModel> IniciarCampeonato([FromBody] IList<FilmeViewModel> filmesViewModel)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
+            if (filmesViewModel.Count != 8)
+            {
+               NotificarErro("Selecione 8 filmes para iniciar o campeonato");
+                return CustomResponse(filmesViewModel);
+            }
 
             var filmes = _mapper.Map<IList<Filme>>(filmesViewModel);
 
-            _copaFilmesService.RealizarCampeonato(filmes);
+            var resultadoCampeonato = _mapper.Map<ResultadoCampeonatoViewModel>(_copaFilmesService.RealizarCampeonato(filmes));
 
-            return CustomResponse(filmesViewModel);
+            if (resultadoCampeonato.Equals(null)) return CustomResponse("Erro ao gerar campeonato.");
+
+            return CustomResponse(resultadoCampeonato);
         }
     }
 }

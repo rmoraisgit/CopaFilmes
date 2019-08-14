@@ -7,6 +7,6 @@ namespace CopaFilmes.Domain.Interfaces
 {
     public interface ICopaFilmesService
     {
-        void RealizarCampeonato(IList<Filme> filmes);
+        Rodada RealizarCampeonato(IList<Filme> filmes);
     }
 }
