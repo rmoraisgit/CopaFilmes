@@ -13,10 +13,7 @@ Configurações Angular
 - Você precisa instalar a útlima versão do NodeJs (10.16.2 LTS). O Download pode ser feito através do link: https://nodejs.org/en/
 - Também é preciso instalar o Angular CLI. O tutorial está disponível através do link: https://cli.angular.io/
 
-
-Also you can run the Equinox Project in Visual Studio Code (Windows, Linux or MacOS).
-
-To know more about how to setup your enviroment visit the [Microsoft .NET Download Guide](https://www.microsoft.com/net/download)
+Você também pode executar o projeto através do Visual Studio Code (Windows, Linux ou MacOS).
 
 
 ## Tecnologias implementadas:
@@ -28,15 +25,3 @@ To know more about how to setup your enviroment visit the [Microsoft .NET Downlo
 - .NET Core Native DI
 - AutoMapper
 - FluentValidator
-
-
-## Architecture:
-
-- Full architecture with responsibility separation concerns, SOLID and Clean Code
-- Domain Driven Design (Layers and Domain Model Pattern)
-- Domain Events
-- Domain Notification
-- CQRS (Imediate Consistency)
-- Event Sourcing
-- Unit of Work
-- Repository and Generic Repository
