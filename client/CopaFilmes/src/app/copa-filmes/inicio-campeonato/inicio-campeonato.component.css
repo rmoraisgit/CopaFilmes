@@ -1,0 +1,33 @@
+h1, h3 ,p {
+    color: #ffffff;
+}
+
+hr {
+    border-top: 1px solid #fff;
+    width: 30px;
+}
+
+.jumbotron {
+    background-color: #656565;
+}
+
+.titulo {
+    font-size: 1rem;
+    color: #a0a0a0;
+    text-transform: uppercase;
+}
+
+.fase-jogo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.descricao-jogo {
+    padding-right: 13rem;
+    padding-left: 13rem;
+}
+
+.text-selecionados {
+    font-size: 1.2rem;
+    font-weight: 500;
+}

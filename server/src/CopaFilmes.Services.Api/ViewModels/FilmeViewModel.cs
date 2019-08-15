@@ -10,7 +10,7 @@ namespace CopaFilmes.Services.Api.ViewModels
         public string Id { get; set; }
         public string Titulo { get; set; }
         public int Ano { get; set; }
-        public decimal Nota { get; set; }
+        public double Nota { get; set; }
         public int Colocacao { get; set; }
     }
 }

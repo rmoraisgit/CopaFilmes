@@ -14,10 +14,23 @@ namespace CopaFilmes.Domain.Models
 
         public List<Filme> Filmes { get; private set; }
         public int NumeroRodada { get; private set; }
+        public bool HouveErro { get; private set; }
 
         public void SetarRodada(int numeroRodada)
         {
             NumeroRodada = numeroRodada;
         }
+
+        public void SinalizarErro()
+        {
+            HouveErro = true;
+        }
+    }
+
+    public enum NivelRodada
+    {
+        PrimeiraRodada = 1,
+        SegundaRodada = 2,
+        UltimaRodada = 3
     }
 }

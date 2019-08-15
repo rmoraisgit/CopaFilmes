@@ -28,28 +28,16 @@ namespace CopaFilmes.Services.Api.Controllers
             _copaFilmesService = copaFilmesService;
         }
 
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
         [HttpPost("inicio-jogo")]
         public ActionResult<ResultadoCampeonatoViewModel> IniciarCampeonato([FromBody] IList<FilmeViewModel> filmesViewModel)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
-            if (filmesViewModel.Count != 8)
-            {
-               NotificarErro("Selecione 8 filmes para iniciar o campeonato");
-                return CustomResponse(filmesViewModel);
-            }
-
+       
             var filmes = _mapper.Map<IList<Filme>>(filmesViewModel);
 
             var resultadoCampeonato = _mapper.Map<ResultadoCampeonatoViewModel>(_copaFilmesService.RealizarCampeonato(filmes));
 
-            if (resultadoCampeonato.Equals(null)) return CustomResponse("Erro ao gerar campeonato.");
+            if(resultadoCampeonato.HouveErro) return CustomResponse(resultadoCampeonato);
 
             return CustomResponse(resultadoCampeonato);
         }

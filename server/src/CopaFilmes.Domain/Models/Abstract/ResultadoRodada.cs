@@ -1,4 +1,4 @@
-﻿using CopaFilmes.Domain.Models.Static;
+﻿using CopaFilmes.Domain.Static;
 using System;
 using System.Collections.Generic;
 using System.Linq;

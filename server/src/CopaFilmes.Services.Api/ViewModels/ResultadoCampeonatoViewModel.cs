@@ -8,5 +8,6 @@ namespace CopaFilmes.Services.Api.ViewModels
     public class ResultadoCampeonatoViewModel
     {
         public ICollection<FilmeViewModel> Filmes  { get; set; }
+        public bool HouveErro { get; set; }
     }
 }

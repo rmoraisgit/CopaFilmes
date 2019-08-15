@@ -19,6 +19,6 @@ export class ResultadoCampeonatoComponent implements OnInit {
 
   ngOnInit() {
     this.filmesVencedores = JSON.parse(localStorage.getItem('resultado-campeonato')).data.filmes;
-    console.log(this.filmesVencedores)
+    localStorage.removeItem('resultado-campeonato');
   }
 }

@@ -1,4 +1,5 @@
 ﻿using CopaFilmes.Domain.Notificacoes;
+using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,13 +15,13 @@ namespace CopaFilmes.Domain.Services
             _notificador = notificador;
         }
 
-        //protected void Notificar(ValidationResult validationResult)
-        //{
-        //    foreach (var error in validationResult.Errors)
-        //    {
-        //        Notificar(error.ErrorMessage);
-        //    }
-        //}
+        protected void Notificar(ValidationResult validationResult)
+        {
+            foreach (var error in validationResult.Errors)
+            {
+                Notificar(error.ErrorMessage);
+            }
+        }
 
         protected void Notificar(string mensagem)
         {
