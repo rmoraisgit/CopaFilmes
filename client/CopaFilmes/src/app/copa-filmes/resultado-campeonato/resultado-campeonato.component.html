@@ -1,22 +1,28 @@
 <div class="jumbotron mt-5 text-center">
-    <h2 class="titulo">Resultado Final</h2>
-    <h1 class="lead fase-jogo">Fase de Seleção</h1>
-    <hr class="">
-    <p class="descricao-jogo">Veja o resultado final do campeonato de filmes de forma simples e rápida</p>
+  <h2 class="titulo">Resultado Final</h2>
+  <h1 class="lead fase-jogo">Fase de Seleção</h1>
+  <hr class="">
+  <p class="descricao-jogo">Veja o resultado final do campeonato de filmes de forma simples e rápida</p>
+</div>
+
+<div class="input-group input-group-lg mt-3 text-resultado">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg">1º</span>
   </div>
-  
-  <div class="input-group input-group-lg mt-3 text-resultado">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-lg">1º</span>
-    </div>
-    <input disabled [value]="filmesVencedores[0].titulo" type="text" class="form-control text-resultado" aria-label="Sizing example input"
-      aria-describedby="inputGroup-sizing-lg">
+  <input disabled [value]="filmesVencedores[0].titulo" type="text" class="form-control text-resultado"
+    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+</div>
+
+<div class="input-group input-group-lg mt-2 text-resultado">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg">2º</span>
   </div>
-  
-  <div class="input-group input-group-lg mt-2 text-resultado">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-lg">2º</span>
-    </div>
-    <input disabled [value]="filmesVencedores[1].titulo" type="text" class="form-control text-resultado" aria-label="Sizing example input"
-      aria-describedby="inputGroup-sizing-lg">
+  <input disabled [value]="filmesVencedores[1].titulo" type="text" class="form-control text-resultado"
+    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-6 mt-3 text-center">
+    <button class="btn btn-secondary" (click)="jogarNovamente()">Jogar Novamente</button>
   </div>
+</div>

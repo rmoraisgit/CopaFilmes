@@ -17,7 +17,6 @@ namespace CopaFilmes.Services.Api.Controllers
     public class CopaFilmesController : BaseController
     {
         private readonly IMapper _mapper;
-        private readonly INotificador _notificador;
         private readonly ICopaFilmesService _copaFilmesService;
 
         public CopaFilmesController(IMapper mapper,

@@ -15,3 +15,20 @@ C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.csproj.CopyComplete
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.dll
 C:\Users\Rafael\Desktop\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.pdb
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Services.Api.deps.json
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Services.Api.runtimeconfig.json
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Services.Api.runtimeconfig.dev.json
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Services.Api.dll
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Services.Api.pdb
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Domain.dll
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\bin\Debug\netcoreapp2.2\CopaFilmes.Domain.pdb
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.csprojAssemblyReference.cache
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.csproj.CoreCompileInputs.cache
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.RazorAssemblyInfo.cache
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.RazorAssemblyInfo.cs
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.AssemblyInfoInputs.cache
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.AssemblyInfo.cs
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.RazorTargetAssemblyInfo.cache
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.csproj.CopyComplete
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.dll
+C:\Users\Rafael\Desktop\FINAL TESTE\CopaFilmes\server\src\CopaFilmes.Services.Api\obj\Debug\netcoreapp2.2\CopaFilmes.Services.Api.pdb

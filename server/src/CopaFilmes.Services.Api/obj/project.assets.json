@@ -13115,11 +13115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\CopaFilmes\\server\\src\\CopaFilmes.Services.Api\\CopaFilmes.Services.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\FINAL TESTE\\CopaFilmes\\server\\src\\CopaFilmes.Services.Api\\CopaFilmes.Services.Api.csproj",
       "projectName": "CopaFilmes.Services.Api",
-      "projectPath": "C:\\Users\\Rafael\\Desktop\\CopaFilmes\\server\\src\\CopaFilmes.Services.Api\\CopaFilmes.Services.Api.csproj",
+      "projectPath": "C:\\Users\\Rafael\\Desktop\\FINAL TESTE\\CopaFilmes\\server\\src\\CopaFilmes.Services.Api\\CopaFilmes.Services.Api.csproj",
       "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rafael\\Desktop\\CopaFilmes\\server\\src\\CopaFilmes.Services.Api\\obj\\",
+      "outputPath": "C:\\Users\\Rafael\\Desktop\\FINAL TESTE\\CopaFilmes\\server\\src\\CopaFilmes.Services.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13138,8 +13138,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Rafael\\Desktop\\CopaFilmes\\server\\src\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj": {
-              "projectPath": "C:\\Users\\Rafael\\Desktop\\CopaFilmes\\server\\src\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj"
+            "C:\\Users\\Rafael\\Desktop\\FINAL TESTE\\CopaFilmes\\server\\src\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj": {
+              "projectPath": "C:\\Users\\Rafael\\Desktop\\FINAL TESTE\\CopaFilmes\\server\\src\\CopaFilmes.Domain\\CopaFilmes.Domain.csproj"
             }
           }
         }

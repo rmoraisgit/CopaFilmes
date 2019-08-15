@@ -21,4 +21,8 @@ export class ResultadoCampeonatoComponent implements OnInit {
     this.filmesVencedores = JSON.parse(localStorage.getItem('resultado-campeonato')).data.filmes;
     localStorage.removeItem('resultado-campeonato');
   }
+
+  jogarNovamente(){
+    this.router.navigate(['/inicio']);
+  }
 }
