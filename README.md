@@ -9,11 +9,13 @@ Configurações .NET
 - Por favor, verifique se a versão do SDK instalada na sua máquina é a mesma descrita no global.json
 - A ultima versão do SDK pode ser baixada pelo link: https://dotnet.microsoft.com/download
 
+Você também pode executar o projeto através do Visual Studio Code (Windows, Linux ou MacOS).
+
 Configurações Angular
 - Você precisa instalar a útlima versão do NodeJs (10.16.2 LTS). O Download pode ser feito através do link: https://nodejs.org/en/
 - Também é preciso instalar o Angular CLI. O tutorial está disponível através do link: https://cli.angular.io/
-
-Você também pode executar o projeto através do Visual Studio Code (Windows, Linux ou MacOS).
+- Execute o comando 'npm-install' dentro da pasta \CopaFilmes\client\CopaFilmes. Esse comando realizará o download de todos os pacotes utilizados no front-end.
+- Após isso, utilize o comando 'ng s --o' para buildar e executar o projeto Angular. Ele estará acessivel através do localhost:4200
 
 
 ## Tecnologias implementadas:
